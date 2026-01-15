@@ -20,10 +20,32 @@ source .venv/bin/activate
 pip install -e .
 ```
 
+### Windows PowerShell
+
+```powershell
+py -3.11 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -e .
+```
+
+### Windows Command Prompt
+
+```bat
+py -3.11 -m venv .venv
+.\.venv\Scripts\activate.bat
+pip install -e .
+```
+
 ## Usage
 
 ```bash
 divi2gutenberg convert --input input.xml --output output.xml
+```
+
+### Windows example
+
+```powershell
+divi2gutenberg convert --input C:\path\to\input.xml --output C:\path\to\output.xml
 ```
 
 Options:
